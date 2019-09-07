@@ -1,0 +1,28 @@
+name: "Sync with Upstream"
+
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+jobs:
+  sync_with_upstream:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@1.0.0
+      with:
+        ref: gh-pages
+    - name: Configure Git
+      run: |
+        echo "devradar.toml merge=ours" > .gitattributes
+        git config merge.ours.driver true
+        git config user.email ""
+        git config user.name "CI Joe"
+        git remote set-url origin https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git
+        git remote add upstream https://github.com/anoff/devradar-static.git
+    - name: Merge changes locally
+      run: |
+        git fetch upstream
+        git merge upstream/gh-pages
+    - name: Push merged changes to remote
+      if: github.ref == "master"
+      run: |
+        git push origin gh-pages
