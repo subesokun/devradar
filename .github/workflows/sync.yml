@@ -2,7 +2,7 @@ name: "Sync with Upstream"
 
 on:
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '0 2 * * *'
 jobs:
   sync_with_upstream:
     runs-on: ubuntu-latest
@@ -23,6 +23,5 @@ jobs:
         git fetch upstream
         git merge upstream/gh-pages
     - name: Push merged changes to remote
-      if: github.ref == 'master'
       run: |
         git push origin gh-pages
