@@ -62,6 +62,17 @@ description = "Using the Microsoft cloud offering in professional solutions."
 	newLevel = 3
 	text = "Deep dive into various Azure services and Azure network infrastructure. Provisioning and maintainance of all used infrastructure compoments via infrastructure as code (IaC)."
 
+[[blips]]
+category = 2
+title = "Google Cloud Platform"
+level = 0
+link = "https://cloud.google.com/"
+description = "Using the Google Cloud Platform offering for personal solutions."
+  [[blips.changes]]
+	date = "2019-05"
+	newLevel = 0
+	text = "Developing a small service that runs on the Google App Engine with Google Firestore as datastore. It provides a REST API for interacting with the Google Assistant via Google Home and sends push messages to the LINE messenger."
+
 # Frameworks Category
 
 [[blips]]
