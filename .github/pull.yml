@@ -1,7 +1,0 @@
-version: "1"
-rules:                      
-  - base: gh-pages            
-    upstream: anoff:gh-pages
-    mergeMethod: merge  # Optional, one of [none, merge, squash, rebase, hardreset], Default: none.
-    assignees:              
-      - subesokun
