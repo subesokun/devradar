@@ -60,7 +60,7 @@ description = "Using the Microsoft cloud offering in professional solutions."
   [[blips.changes]]
 	date = "2019-03"
 	newLevel = 3
-	text = "Deep dive into the various Azure services and Azure network infrastructure. Provisioning and maintainance of all used infrastructure compoments via infrastructure as code (IaC)."
+	text = "Deep dive into various Azure services and Azure network infrastructure. Provisioning and maintainance of all used infrastructure compoments via infrastructure as code (IaC)."
 
 # Frameworks Category
 
