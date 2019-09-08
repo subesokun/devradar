@@ -1,4 +1,4 @@
-# Subesokuns Personal DevRadar
+# Subesokun's skillradar
 
 ✨⚡️✨ [https://subesokun.github.io/devradar/](https://subesokun.github.io/devradar/) ✨⚡️✨
 
