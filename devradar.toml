@@ -1,14 +1,76 @@
 [meta]
 title = "Subesokun's skillradar"
 categories = [ "Tools", "Techniques", "Platforms", "Frameworks" ]
-states = [ "Novice", "Intermediate", "Advanced", "Veteran" ]
+levels = [ "Novice", "Intermediate", "Advanced", "Veteran" ]
+
+# Tools Category
+
+[[blips]]
+category = 0
+title = "GitLab"
+level = 3
+link = "https://about.gitlab.com/"
+description = "The entire DevOps lifecycle in one application."
+  [[blips.changes]]
+	date = "2013-06"
+	newLevel = 0
+	text = "Setting up my first instance and collaborate with other team members on it."
+  [[blips.changes]]
+	date = "2017-06"
+	newLevel = 1
+	text = "Using GitLab for multiple projects, including GitLab CI/CD."
+  [[blips.changes]]
+	date = "2018-06"
+	newLevel = 3
+	text = "Deep dive into GitLab and learned how to use it along the whole DevOps lifecycle."
+
+[[blips]]
+category = 0
+title = "Valve Hammer Editor"
+level = 1
+link = "https://developer.valvesoftware.com/wiki/Valve_Hammer_Editor"
+description = "Level-editor for 3D game maps."
+  [[blips.changes]]
+	date = "2002-01"
+	newLevel = 1
+	text = "Building small fun maps for Half-Life."
+  [[blips.changes]]
+	date = "2004-01"
+	newLevel = 2
+	text = "Building complex maps for Half-Life and diverse Half-Life Mods. Spend hours and days on fixing 'map leaks into void :o)' and optimizing the overall FPS rate."
+
+# Techniques Category
+
+# Platforms Category
+
+[[blips]]
+category = 2
+title = "Azure"
+level = 3
+link = "https://azure.microsoft.com"
+description = "Using the Microsoft cloud offering in professional solutions."
+  [[blips.changes]]
+	date = "2017-06"
+	newLevel = 1
+	text = "Developing a simulation framework based on Azure Kubernetes Service and Azure Blob Storage for executing data intensive analysis workflows."
+  [[blips.changes]]
+	date = "2018-06"
+	newLevel = 2
+	text = "Hosting various mircoservices on Azure Kubernetes Service and establish a CI/CD workflow to ease and streamline the development of those mircoservices."
+  [[blips.changes]]
+	date = "2019-03"
+	newLevel = 3
+	text = "Deep dive into the various Azure services and Azure network infrastructure. Provisioning and maintainance of all used infrastructure compoments via infrastructure as code (IaC)."
+
+# Frameworks Category
 
 [[blips]]
 category = 3
 title = "Go"
-state = 0
-
+level = 0
+link = "https://golang.org/"
+description = "Playing around with Go."
   [[blips.changes]]
   date = "2018-12"
-  newState = 0
-  text = "Solving Advent-Of-Code puzzles in Go"
+  newLevel = 0
+  text = "Solving Advent-Of-Code puzzles in Go."
