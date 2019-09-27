@@ -85,3 +85,14 @@ description = "Playing around with Go."
   date = "2018-12"
   newLevel = 0
   text = "Solving Advent-Of-Code puzzles in Go."
+  
+[[blips]]
+category = 3
+title = "Vue"
+level = 0
+link = "https://vuejs.org/"
+description = "Playing around with Vue."
+  [[blips.changes]]
+  date = "2019-09"
+  newLevel = 0
+  text = "Building a small app using Vue and Vuetify (Vue Material Design Component Framework) for doing fancy stuff with my piano and WebMIDI 🎶🎹⚡️."
